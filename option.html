@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Set the title of the webpage -->
+        <title>Booking System</title>
+    </head>
+    <body style="background-color:#00b3b3;">
+        <!-- Display the title of the Bed and Breakfast -->
+        <h2 style="color: #ffffff">Lucy's Bed and Breakfast</h2>
+
+        <!-- Create a button to book a customer. When clicked, it redirects to the 'capture' route -->
+        <button class="btn" type="button" onclick="window.location.href='{{ url_for('capture') }}';">Book A Customer</button><br/> <br/>
+
+        <!-- Create a button to view the customer list. When clicked, it redirects to the 'customers' route -->
+        <button class="btn" type="button" onclick="window.location.href='{{ url_for('customers') }}';">View Customer List</button>
+    </body>
+</html>
